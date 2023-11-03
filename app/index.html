@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are Who We Are</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__top">
+                    <img class="header__logo" src="../images/logo.svg" alt="logo">
+                    <div class="header__menu">
+                        <div class="header__menu-burger">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu-body menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a data-goto=".--about-section" class="menu__list-link" href="#">ABOUT</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a data-goto=".--cast-crew-section" class="menu__list-link" href="#">CAST&CREW</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a data-goto=".--episodes-section" class="menu__list-link" href="#">EPISODES</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a data-goto=".--photos-section" class="menu__list-link" href="#">PHOTO</a>
+                                </li>
+                            </ul>
+                        </nav>                      
+                    </div>
+                    <div class="socials">
+                        <a class="socials-item" href="#">
+                            <img src="../images/insta.svg" alt="instagram">
+                        </a>
+                        <a class="socials-item" href="#">
+                            <img src="../images/youtube.svg" alt="youtube">
+                        </a>
+                        <a class="socials-item" href="#">
+                            <img src="../images/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="socials-item" href="#">
+                            <img src="../images/twitter.svg" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+      
+                <div class="header__main">
+                    <div class="header__left">
+                        <div class="header__title">WE ARE</div>
+                        <div class="header__info">
+                            <div class="header__info-author">Luca Guadagnino</div>
+                            <div class="header__info-text">AVAILABLE NOW</div>
+                            <button class="header__info-btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__right-title">
+                            <div class="header__right-title-text">
+                                <div>1 SEASON   /   8 EPISODES</div>
+                                <div>TV-MA</div>
+                            </div>
+                            <div class="header__title">who</div>
+                        </div>
+                        <div class="header__title --we-are">we are</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <main>
+
+    <!-- ABOUT SECTION -->
+    <section class="about --about-section">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__top">
+                    <h1 class="about__title">ABOUT</h1>
+                    <img class="about__top-img" src="../images/about-img-1.jpg" alt="image">
+                </div>
+                <div class="about__bottom">
+                    <img class="about__bottom-img" src="../images/about-img-2.jpg" alt="image">
+                    <div class="about__bottom-text">Set in 2016, this coming-of-age drama series from Luca Guadagnino (Call Me by Your Name) follows two American teenagers as they explore their true identities while living on a military base in the seaside town of Chioggia, Italy.</div>
+                </div>          
+                <div class="about__trailer">
+                    <div class="about__trailer-wrap">
+                        <a id='video_player' class="about__trailer-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                            <!-- <img class="about__trailer-imgBtn" src="@img/play_button.svg" alt="Play Button"> -->
+                            <div class="video-playBtn">
+                                <span>PLAY</span>
+                            </div>
+                        </a>
+                        <div class="about__trailer-text">WATCH THE TRAILER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAST&CREW SECTION -->
+    <section class="cast-crew --cast-crew-section">
+        <div class="container">
+            <div class="cast-crew__inner">
+                <h1 class="cast-crew__title">CAST & CREW</h1>
+                <div class="cast-crew__main">
+                    <div class="cast-crew__item">
+                        <div class="cast-crew__item-character">Fraser Wilson</div>
+                        <div class="cast-crew__item-actor">
+                            <img class="cast-crew__item-photo" src="../images/actor-jack.webp" alt="actor">
+                            <div class="cast-crew__item-name">Jack Dylan Grazer</div>
+                        </div>
+                    </div>
+                    <div class="cast-crew__item">
+                        <div class="cast-crew__item-character">Caitlin Poythress</div>
+                        <div class="cast-crew__item-actor">
+                            <img class="cast-crew__item-photo" src="../images/actor-jordan.webp" alt="actor">
+                            <div class="cast-crew__item-name">Jordan Kristine Seamón</div>
+                        </div>
+                    </div>
+                    <div class="cast-crew__item">
+                        <div class="cast-crew__item-character">Sarah Wilson</div>
+                        <div class="cast-crew__item-actor">
+                            <img class="cast-crew__item-photo" src="../images/actor-chloe.webp" alt="actor">
+                            <div class="cast-crew__item-name">Chloë Sevigny</div>
+                        </div>
+                    </div>
+                    <div class="cast-crew__item">
+                        <div class="cast-crew__item-character">Maggie Teixeira</div>
+                        <div class="cast-crew__item-actor">
+                            <img class="cast-crew__item-photo" src="../images/actor-alice.webp" alt="actor">
+                            <div class="cast-crew__item-name">Alice Braga</div>
+                        </div>
+                    </div>
+                    <div class="cast-crew__item">
+                        <div class="cast-crew__item-character">Richard Poythress</div>
+                        <div class="cast-crew__item-actor">
+                            <img class="cast-crew__item-photo" src="../images/actor-scott.webp" alt="actor">
+                            <div class="cast-crew__item-name">Scott "Kid Cudi" Mescudi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-all-btn">
+                    <a href="#">
+                        <span>See All</span>
+                        <button type="button"></button>
+                    </a>          
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EPISODES SECTION -->
+    <section class="episodes --episodes-section">
+        <div class="container">
+            <div class="episodes__inner">
+                <h1 class="episodes__title">EPISODES</h1>
+                <div class="episodes__main">
+                    <!-- item1 -->
+                    <div class="episodes__item">
+                        <div class="episodes__videos">
+                            <div class="episodes__videos-main">
+                                <img class="episodes__videos-main-img" src="../images/ep1-video-img.webp" alt="ep1">
+                                <a class="episodes__videos-main-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                                    <div class="video-playBtn">
+                                        <span>WATCH</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="episodes__videos-additional">
+                                <p class="episodes__videos-additional-title">
+                                    S1 E1<br>
+                                    <b>Inside the Episode</b>
+                                </p>
+                                <div class="episodes__videos-additional-video">
+                                    <img class="episodes__videos-additional-img" src="../images/ep1-2-video-img.webp" alt="ep1">
+                                    <a class="episodes__videos-additional-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                                        <div class="video-playBtn">
+                                            <span>PLAY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="episodes__info">
+                            <div class="episodes__info-about">
+                                <p class="episodes__info-episode">SEASON 1 EPISODE 1</p>
+                                <h3 class="episodes__info-title">Right here, right now #1</h3>
+                                <p class="episodes__info-description">Series premiere. When his mother’s new military assignment uproots their family from New York to Italy, 14-year-old Fraser Wilson struggles to find a place for himself.</p>
+                            </div>
+                            <div class="episodes__info-authors">
+                                <div class="episodes__info-authors-written">
+                                    <p class="episodes__info-authors-title">Written by</p>
+                                    <p class="episodes__info-authors-names">
+                                        Luca Guadagnino<br>
+                                        Paolo Giordano<br>
+                                        Francesca Manieri
+                                    </p>
+                                </div>
+                                <div class="episodes__info-authors-directed">
+                                    <p class="episodes__info-authors-title">Directed by</p>
+                                    <p class="episodes__info-authors-names">Luca Guadagnino</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item2 -->
+                    <div class="episodes__item">
+                        <div class="episodes__videos">
+                            <div class="episodes__videos-main">
+                                <img class="episodes__videos-main-img" src="../images/ep2-video-img.webp" alt="ep2">
+                                <a class="episodes__videos-main-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                                    <div class="video-playBtn">
+                                        <span>WATCH</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="episodes__videos-additional">
+                                <p class="episodes__videos-additional-title">
+                                    S1 E2<br>
+                                    <b>Inside the Episode</b>
+                                </p>
+                                <div class="episodes__videos-additional-video">
+                                    <img class="episodes__videos-additional-img" src="../images/ep2-2-video-img.webp" alt="ep2">
+                                    <a class="episodes__videos-additional-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                                        <div class="video-playBtn">
+                                            <span>PLAY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="episodes__info">
+                            <div class="episodes__info-about">
+                                <p class="episodes__info-episode">SEASON 1 EPISODE 2</p>
+                                <h3 class="episodes__info-title">Right here, right now #2</h3>
+                                <p class="episodes__info-description">Fraser uncovers one of Caitlin’s deepest secrets, forever changing their relationship.</p>
+                            </div>
+                            <div class="episodes__info-authors">
+                                <div class="episodes__info-authors-written">
+                                    <p class="episodes__info-authors-title">Written by</p>
+                                    <p class="episodes__info-authors-names">
+                                        Luca Guadagnino<br>
+                                        Paolo Giordano<br>
+                                        Francesca Manieri
+                                    </p>
+                                </div>
+                                <div class="episodes__info-authors-directed">
+                                    <p class="episodes__info-authors-title">Directed by</p>
+                                    <p class="episodes__info-authors-names">Luca Guadagnino</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item3 -->
+                    <div class="episodes__item">
+                        <div class="episodes__videos">
+                            <div class="episodes__videos-main">
+                                <img class="episodes__videos-main-img" src="../images/ep3-video-img.webp" alt="ep3">
+                                <a class="episodes__videos-main-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                                    <div class="video-playBtn">
+                                        <span>WATCH</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="episodes__videos-additional">
+                                <p class="episodes__videos-additional-title">
+                                    S1 E3<br>
+                                    <b>Inside the Episode</b>
+                                </p>
+                                <div class="episodes__videos-additional-video">
+                                    <img class="episodes__videos-additional-img" src="../images/ep3-2-video-img.webp" alt="ep3">
+                                    <a class="episodes__videos-additional-play" href="https://www.youtube.com/watch?v=zslamAqw3BQ" data-fancybox>
+                                        <div class="video-playBtn">
+                                            <span>PLAY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="episodes__info">
+                            <div class="episodes__info-about">
+                                <p class="episodes__info-episode">SEASON 1 EPISODE 3</p>
+                                <h3 class="episodes__info-title">Right here, right now #3</h3>
+                                <p class="episodes__info-description">The dynamics of the friend group shift after Caitlin and Sam’s break up. Meanwhile, Sarah and Maggie make some new connections.</p>
+                            </div>
+                            <div class="episodes__info-authors">
+                                <div class="episodes__info-authors-written">
+                                    <p class="episodes__info-authors-title">Written by</p>
+                                    <p class="episodes__info-authors-names">
+                                        Luca Guadagnino<br>
+                                        Paolo Giordano<br>
+                                        Francesca Manieri
+                                    </p>
+                                </div>
+                                <div class="episodes__info-authors-directed">
+                                    <p class="episodes__info-authors-title">Directed by</p>
+                                    <p class="episodes__info-authors-names">Luca Guadagnino</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="see-all-btn">
+                    <a href="#">
+                        <span>See All</span>
+                        <button type="button"></button>
+                    </a>          
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WATCH-BANNER SECTION -->
+    <section class="watch-banner">
+        <div class="container">
+            <div class="watch-banner__inner">
+                <div class="watch-banner__left">
+                    <div class="watch-banner__left-title">wahwa</div>
+                </div>
+                <div class="watch-banner__right">
+                    <div class="watch-banner__right-title">watch</div>
+                    <div class="watch-banner__right-info">
+                        <span class="watch-banner__right-info-text">the first episode is streaming now</span>
+                        <a class="watch-banner__right-info-btn" href="https://www.hulu.com/series/we-are-who-we-are-75613c68-7e4d-4dbe-bcd5-c17c8fd4a5f6" target="_blank" rel="noopener noreferrer">
+                            <span>WATCH for free</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTOS SECTION -->
+    <section class="photos --photos-section">
+        <div class="container">
+            <div class="photos__inner">
+                <h1 class="photos__title">PHOTO</h1>
+                <div class="photos__items">
+                    <img class="photos__item" src="../images/photo-1.webp" alt="photo">
+                    <img class="photos__item" src="../images/photo-2.webp" alt="photo">
+                    <img class="photos__item" src="../images/photo-4.webp" alt="photo">
+                    <img class="photos__item" src="../images/photo-3.webp" alt="photo">
+                    <img class="photos__item" src="../images/photo-5.webp" alt="photo">
+                    <img class="photos__item" src="../images/photo-6.webp" alt="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLLOW-US SECTION -->
+    <section class="follow-us">
+        <div class="container">
+            <div class="follow-us__inner">
+                <h1 class="follow-us__title">FOLLOW US</h1>
+                <span class="follow-us__insta">@wearewhoweare on Instagram</span>
+                <div class="follow-us__gallery">
+                    <div class="follow-us__gallery-photos">
+                        <img class="follow-us__gallery-photos-item" src="../images/photo-7.webp" alt="photo">
+                        <img class="follow-us__gallery-photos-item" src="../images/photo-8.webp" alt="photo">
+                        <img class="follow-us__gallery-photos-item" src="../images/photo-9.webp" alt="photo">
+                        <img class="follow-us__gallery-photos-item" src="../images/photo-10.webp" alt="photo">
+                    </div>
+                    <a class="video-playBtn follow-us__gallery-btn" href="http://instagram.com/wearewhoweare" target="_blank" rel="noopener noreferrer">
+                        <span>FOLLOW NOW</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer__title">WE ARE WHO WE ARE</div>
+
+      <div class="footer__main">
+
+        <div class="footer__copyright">
+
+          <img class="footer__logo" src="../images/logo-footer.svg" alt="logo">
+
+          <div class="footer__copyright-text">© 2020 Home Box Office, Inc. All Rights Reserved
+
+            This website may contain mature content</div>
+
+        </div>
+
+        <nav class="footer__menu">
+
+          <ul class="footer__menu-list">
+
+            <li class="footer__menu-list-item">
+
+              <a class="footer__menu-list-link" href="#">ABOUT</a>
+
+            </li>
+
+            <li class="footer__menu-list-item">
+
+              <a class="footer__menu-list-link" href="#">CAST&CREW</a>
+
+            </li>
+
+            <li class="footer__menu-list-item">
+
+              <a class="footer__menu-list-link" href="#">EPISODES</a>
+
+            </li>
+
+            <li class="footer__menu-list-item">
+
+              <a class="footer__menu-list-link" href="#">PHOTO</a>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <div class="socials">
+
+          <a class="socials-item" href="#">
+
+              <img src="../images/insta.svg" alt="instagram">
+
+          </a>
+
+          <a class="socials-item" href="#">
+
+              <img src="../images/youtube.svg" alt="youtube">
+
+          </a>
+
+          <a class="socials-item" href="#">
+
+              <img src="../images/facebook.svg" alt="facebook">
+
+          </a>
+
+          <a class="socials-item" href="#">
+
+              <img src="../images/twitter.svg" alt="twitter">
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+
+<script src="js/main.min.js"></script>
+
+</body>
+
+
+
+</html>

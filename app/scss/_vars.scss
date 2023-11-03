@@ -1,0 +1,54 @@
+/**
+ * Миксины для работы с медиазапросами
+ */
+ @mixin media-max($resolution){
+  @media (max-width: $resolution - 1) {
+      @content;
+  }
+}
+@mixin media-min($resolution){
+  @media (min-width: $resolution) {
+      @content;
+  }
+}
+@mixin media-interval($resolution-min, $resolution-max){
+  @media (min-width: $resolution-min) and (max-width: $resolution-max - 1){
+      @content;
+  }
+}
+
+$index: calc(1vw + 1vh);
+$color-main: #FEE800;
+$color-text: #313131;
+$color-title: #EFEFEF;
+
+$mobile: 980px;
+$xxs: 375px; /* iphone X в портретной ориентации */
+$xs: 414px; /* iphone plus в портретной ориентации */
+$sm: 568px; /*  */
+$md: 820px; /* планшеты в портретной ориентации / телефоны в альбомной */
+$lg: 1024px; /* планшеты в альбомной ориентации */
+$xl: 1280px; /* ширина контента широкого сайта ( 1170 например )  */
+$xxl: 1600px; /* ширина контента широкого сайта ( 1170 например )  */
+
+%title-font{
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: 700;
+}
+
+%title {
+  @extend %title-font;
+  color: $color-title;
+  font-size: calc($index * 15);
+  line-height: 100%; /* 350px */
+  letter-spacing: -10.5px;
+  text-transform: uppercase;
+  @include media-max($xl) {
+    font-size: calc($index * 12);
+  }
+  @include media-max($sm) {
+    font-size: calc($index * 9);
+    letter-spacing: -3px;
+  }
+}
+

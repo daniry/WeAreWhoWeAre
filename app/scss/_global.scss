@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+	border: 0;
+  box-sizing: border-box;
+}
+
+// :root {
+//   --index: calc(1vw+1vh);
+//   --color-main: #FEE800;
+//   --color-text: #313131;
+// }
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 400;
+	color: $color-text;
+	overflow-x: hidden;
+	min-width: 320px;
+	&.--lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-height: 999999px;
+	max-width: 100%;
+	width: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+	background-color: $color-main;
+}
+
+.container{
+  max-width: 1600px;
+	width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+	@include media-max($mobile) {
+		/* padding: 0 37px 0 20px; */
+		padding: 0 20px;
+	}
+}
+
+.see-all-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 40px auto 0;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color-main;
+		font-weight: 900;
+		letter-spacing: 0.48px;
+		text-transform: uppercase;
+		transition: 0.3s;
+		&:hover {
+			color: $color-text;
+			button {
+				background: url("../images/arrow-right--hover.svg") $color-text center no-repeat;
+			}
+		}
+		@include media-max($sm) {
+			letter-spacing: 0.3px;
+			font-size: 10px;
+		}
+	}
+	span {
+		margin-right: 20px;
+		@include media-max($sm) {
+			margin-right: 10px;
+		}
+	}
+	button {
+		width: 40px;
+		height: 40px;
+		background: url("../images/arrow-right.svg") $color-main center no-repeat;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: 0.3s;
+		@include media-max($sm) {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+.video-playBtn {
+	background-color: $color-main;
+	max-width: 100px;
+	max-height: 100px;
+	height: calc($index * 5);
+	width: calc($index * 5);
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	span {
+		color: $color-text;
+	}
+	@include media-max($xl) {
+		height: calc($index * 4);
+		width: calc($index * 4);
+		top: calc(50% - 40px);
+		left: calc(50% - 40px);
+		span {
+			font-size: 14px;
+		}
+	}
+	@include media-max(675px) {
+		height: calc($index * 5);
+		width: calc($index * 5);
+	}
+}
