@@ -339,8 +339,13 @@
     position: relative;
     @include media-max($xl) {
       line-height: 80%;
-      margin: 30px 0 10px 0;
+      margin: 30px 0 0 0;
+      padding-bottom: 10px;
     }
+    @include media-max($md) {
+      letter-spacing: -3px;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -354,14 +359,27 @@
   &__main {
     display: flex;
     margin: 40px 0 29px;
+    .socials {
+      @include media-max($sm) {
+        position: static;
+        margin-top: 19px;
+      }
+    }
   }
   &__logo {
     width: 79px;
     height: 37px;
     margin-bottom: 40px;
+    @include media-max($sm) {
+      margin-bottom: 30px;
+    }
   }
   &__copyright {
     margin-right: 18%;
+    @include media-max($sm) {
+      margin-right: 10%;
+      max-width: 50%;
+    }
   }
   &__copyright-text {
     color: #000;
@@ -391,10 +409,18 @@
       line-height: normal;
       opacity: 1;
     }
+    @include media-max($sm) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 footer .socials-item {
   margin-right: 20px;
+  @include media-max($sm) {
+    margin-right: 7px;
+  }
 }
 
 

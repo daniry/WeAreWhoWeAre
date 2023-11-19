@@ -15,6 +15,9 @@ function checkOnMobile() {
       })
     }
 
+    // перемещение в футере
+    document.querySelector('.footer__menu').append(document.querySelector('footer .socials'));
+
   } else {
     console.log('desk')
 
@@ -28,6 +31,9 @@ function checkOnMobile() {
         document.querySelectorAll('.episodes__videos')[i].prepend(ep)
       })
     }
+
+    // перемещение в футере
+    document.querySelector('.footer__main').append(document.querySelector('footer .socials'));
   }
 
 }
