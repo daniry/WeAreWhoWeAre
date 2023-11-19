@@ -74,7 +74,7 @@ function scripts() {
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
         'node_modules/aos/dist/aos.js',
-        
+
         'app/js/resize.js',
         'app/js/main.js',
 
@@ -118,8 +118,8 @@ function building() {
     return src([
         'app/css/style.min.css',
         'app/images/*.*',
-        '!app/images/*.svg',
-        'app/images/sprite.svg',
+        'app/images/*.svg',
+        // 'app/images/sprite.svg',
         'app/fonts/*.*',
         'app/js/main.min.js',
         'app/**/*.html',
