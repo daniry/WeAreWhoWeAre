@@ -66,9 +66,15 @@ function sprite() {
 function scripts() {
     return src([
         // импорт плагинов
-        
+        // импорт плагинов
+        'app/libs/gsap/gsap.min.js',
+        'app/libs/gsap/ScrollSmoother.min.js',
+        'app/libs/gsap/ScrollTrigger.min.js',
+
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+        'node_modules/aos/dist/aos.js',
+        
         'app/js/resize.js',
         'app/js/main.js',
 

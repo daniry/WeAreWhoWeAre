@@ -1,3 +1,24 @@
+AOS.init();
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
+if (ScrollTrigger.isTouch !== 1) {
+  ScrollSmoother.create({
+    smooth: 1,
+    effects: false, // looks for data-speed and data-lag attributes on elements
+    smoothTouch: 0.1,
+  })
+  // настройка хедера (непрозрачность при скролле)
+  gsap.fromTo('.header', { opacity: 1 }, {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.header',
+      start: 'center',
+      end: '800',
+      scrub: true
+    }
+  })
+}
+
 // fancybox плагин
 $('[data-fancybox]').fancybox({
   youtube : {
@@ -56,4 +77,6 @@ if(headerScrollBtn) {
     e.preventDefault();
   })
 }
+
+
 

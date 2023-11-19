@@ -30,7 +30,7 @@ body {
 	}
 }
 
-.wrapper {
+.content {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -56,6 +56,11 @@ footer {
 		/* padding: 0 37px 0 20px; */
 		padding: 0 20px;
 	}
+}
+
+/* will-change */
+.content > * {
+	will-change: transform;
 }
 
 .see-all-btn {
@@ -117,8 +122,12 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all .2s ease;
 	span {
 		color: $color-text;
+	}
+	&:hover {
+		background-color: #fff;
 	}
 	@include media-max($xl) {
 		height: calc($index * 4);

@@ -1005,6 +1005,10 @@ footer .socials-item {
         justify-content: center;
         color: $color-text;
         text-transform: uppercase;
+        transition: all .2s ease;
+        &:hover {
+          background-color: #fff;
+        }
         @include media-max($xl) {
           max-width: 170px;
           max-height: 170px;
